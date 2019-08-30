@@ -198,9 +198,9 @@ def set_after_install(instance_port):
     os.system('/sbin/iptables-save')
 
 if __name__ == "__main__":
+        mysql_port = input("请输入要使用的mysql服务端端口：")
         download_pkg()
         set_pre_install()
-        mysql_port = input("请输入要使用的mysql服务端端口：")
         build_install()
         set_after_install(mysql_port)
         print("mysql5.7已安装完毕，请使用socket方式登录实例并设置用户密码")
