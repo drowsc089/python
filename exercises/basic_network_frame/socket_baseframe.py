@@ -1,6 +1,7 @@
 #!/usr/bin/env python
 #-*- coding: utf-8 -*-
 #socket服务端网络通讯基本框架
+#单一服务器响应模式，非客户端交互模式，浏览器或模拟访问即返回结果
 
 import socket
 
