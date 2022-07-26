@@ -26,7 +26,7 @@ else:
 
 def download_pkg():
     download_url1 = "https://dev.mysql.com/get/Downloads/MySQL-5.7/mysql-boost-5.7.26.tar.gz"
-    download_url2 = "https://dl.bintray.com/boostorg/release/1.70.0/source/boost_1_70_0.tar.gz"
+    download_url2 = "https://boostorg.jfrog.io/artifactory/main/release/1.70.0/source/boost_1_70_0.tar.gz"
     # 下载mysql源码包
     file_check1 = os.path.exists("%s/mysql-boost-5.7.26.tar.gz" % store_path)
     if file_check1:
